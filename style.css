@@ -1,0 +1,249 @@
+.clear{
+    clear: both;
+}
+
+.flex{
+    width: 942px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.corps{
+    width:550px;
+    height: 300px;
+    background-color: #36373A;
+    padding-top: calc(300px * 2/100);
+    z-index: 100;
+    position: relative;
+}
+
+.ecran{
+    box-sizing: border-box;
+    width: 95%;
+    height: 98%;
+    background: url(./mario.jpg) center no-repeat;
+    background-size: cover;
+    margin: auto;
+    border: 20px solid black;
+    border-left: 40px solid black;
+    border-right: 40px solid black;
+    border-radius: 8px;
+}
+
+.creux{
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    top: 0;
+    background-color: white;
+}
+
+.creux_gauche {
+    left: 0;
+    border-bottom-right-radius: 50%;
+}
+
+.creux_droite {
+    right: 0;
+    border-bottom-left-radius: 50%;
+}
+
+.manette_droite{
+    position: relative;
+    height: 306px;
+    width: 100px;
+    background-color: #D8463B;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    z-index: 10;
+}
+
+.manette_gauche{
+    position: relative;
+    height: 306px;
+    width: 100px;
+    background-color: #4FBAD8;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+}
+
+.moins {
+    text-align: right;
+    font-size: 60px;
+    color: #3C3D3F;
+    position: absolute;
+    right: 5px;
+    top: -10px;
+}
+
+.plus {
+    text-align: right;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #3C3D3F;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.manette_gauche .boutons_container {
+    width: 67%;
+    position: absolute;
+    bottom: 90px;
+    left: 17px;
+}
+
+.manette_droite .boutons_container {
+    width: 67%;
+    position: absolute;
+    top: 50px;
+    right: 17px;
+}
+
+.bouton{
+    box-sizing: padding-box;
+    height: 17px;
+    width: 22px;
+    background-color: #3C3D3F;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    font-size: 13px;
+    box-shadow: 0.5px 0.5px 1px black;
+}
+
+.manette_gauche .bouton {
+    color: black;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    margin: auto;
+}
+
+.joystick {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #3C3D3F;
+    position: absolute;
+}
+
+.interieur {
+    width: 70%;
+    height: 70%;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 6.8px;
+    right: 6.8px;
+    background-color: #3C3D3F;
+}
+
+.manette_droite .joystick {
+    position: absolute;
+    bottom: 105px;
+    left: 25px;
+}
+
+.manette_gauche .joystick {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}
+
+.trait_v {
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    margin: auto;
+}
+
+.trait_h {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+.gachette {
+    width: 100px;
+    height: 100px;
+    background: #3C3D3F;
+    border-radius: 47%;
+    position: absolute;
+}
+
+.gachette-gauche {
+    top: -2px;
+    left: 105px;
+}
+
+.gachette-droite {
+    top: -2px;
+    right: 105px;
+}
+
+.bouton_carre {
+    width: 18px;
+    height: 18px;
+    background-color: #3C3D3F;
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
+}
+
+.bouton_carre_int {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 2px auto;
+}
+
+.bouton_home {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 3px solid rgb(84, 85, 87);
+    background-color: #3C3D3F;
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+}
+
+.bouton_home img {
+    width: 80%;
+    display: block;
+    margin: 1px auto;
+}
+
+.volume {
+    position: absolute;
+    top: -2px;
+    left: 280px;
+    display: flex;
+    width: 40px;
+    justify-content: space-between;
+}
+
+.volume div {
+    width: 15px;
+    height: 8px;
+    border-radius: 30%;
+    background-color: #3C3D3F;
+}
